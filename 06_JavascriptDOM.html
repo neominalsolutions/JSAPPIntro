@@ -132,11 +132,11 @@
         const parafElement = document.getElementById("paraf");
         // style attribute değerini okumak için bir işlem yaptık.
         const displayValue = parafElement
-          .getAttribute("style")
-          .replace("display:", "");
-        console.log("displayValue", displayValue);
+          .getAttribute("style");
+        //   .replace("display:", "");
+        // console.log("displayValue", displayValue);
 
-        if (displayValue == "none") {
+        if (displayValue == "display:none") {
         //  parafElement.removeAttributeNS('style');
           parafElement.setAttribute("style", "display:block");
         } else {
